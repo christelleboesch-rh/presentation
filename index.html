@@ -227,10 +227,10 @@ h1 em{font-style:italic;color:var(--green)}
 .projection-bloc{
   margin-top:38px;
 }
-.recherche{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.recherche{display:flex;gap:18px}
 .recherche-card{
   background:#fff;border:1px solid var(--line);border-radius:14px;
-  padding:24px 26px;
+  padding:24px 26px;flex:0 0 auto;
 }
 .rc-label{
   font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
@@ -272,7 +272,7 @@ footer p{font-size:13px;color:var(--graphite)}
   .qualites{grid-template-columns:1fr 1fr}
   .valeurs{grid-template-columns:repeat(2,1fr)}
   .sf-grid{grid-template-columns:1fr}
-  .recherche{grid-template-columns:1fr}
+  .recherche-card{flex:1 1 100%}
 }
 @media (max-width:520px){
   .qualites,.valeurs{grid-template-columns:1fr}
@@ -324,18 +324,10 @@ footer p{font-size:13px;color:var(--graphite)}
     </div>
   </div>
   <div class="hero-extra wrap" id="projection">
-    <div class="recherche">
-      <div class="recherche-card">
+      <div class="recherche">
+        <div class="recherche-card">
           <span class="rc-label">Mobilité</span>
           <p>Strasbourg · nationale, hybride</p>
-        </div>
-        <div class="recherche-card">
-          <span class="rc-label">Secteurs</span>
-          <p>Industrie, distribution, tech, banque</p>
-        </div>
-        <div class="recherche-card">
-          <span class="rc-label">Diplôme</span>
-          <p>Attendu en septembre 2026</p>
         </div>
       </div>
   </div>
@@ -366,7 +358,7 @@ footer p{font-size:13px;color:var(--graphite)}
     <div class="savoirs-grid">
       <div class="savoir-card">
         <h3>Master Manager en Ressources Humaines — CCI Campus Strasbourg</h3>
-        <p>En alternance, diplôme attendu en septembre 2026 : recrutement, développement RH, conduite de projet, stratégie et marketing RH.</p>
+        <p>Diplôme attendu en septembre 2026 : recrutement, développement RH, conduite de projet, stratégie et marketing RH.</p>
       </div>
       <div class="savoir-card">
         <h3>Master ISG — Institut Supérieur de Gestion</h3>
